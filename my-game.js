@@ -1,6 +1,6 @@
 // constants to set up the environment
 
-const CANVAS_WIDTH = 500;
+const CANVAS_WIDTH = 300;
 
 const CANVAS_HEIGHT = 500;
 
@@ -68,4 +68,83 @@ function drawPlayer(pX, pY) {
   // nose
   fill('orange');
   triangle(pX, pY, pX+10, pY+5, pX-10, pY+10);
+}
+
+
+
+//PONG
+
+function setup() {
+	
+createCanvas(500, 500);
+	
+
+
+}
+
+v
+ar value = 10
+
+var x = 20
+
+var y = 20
+
+var dx = 5
+
+var dy = 5
+
+
+
+function draw(){
+  
+background('white')
+	
+drawRect()
+  
+drawBall()
+
+	
+
+if (keyIsDown(LEFT_ARROW)) {
+     
+value = value - 10;
+  
+}
+
+  else if (keyIsDown(RIGHT_ARROW)) 
+{
+     
+value = value+10;
+
+  }
+  
+
+if (x==20 & y==20){
+    
+x=random(0,300)
+    
+y = random(0,300)
+  
+	}
+
+}
+
+
+
+function drawRect(){
+
+	rect(value, 400, 200, 10)
+	
+	fill('blue')
+	
+
+}
+
+
+
+function drawBall(){
+	
+	ellipse(x, y, 55, 55)
+  
+	fill ('black')
 }
